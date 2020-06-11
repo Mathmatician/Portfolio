@@ -6,8 +6,12 @@
 <style>
 
 	body {
-		background-color: coral;
-		width: 1950px;
+		background-image: linear-gradient( to left top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Vectors.png');
+		background-repeat: no-repeat;
+		background-size: 2000px;
+		background-position: top center;
+		width: 1910px;
+		height: 2000px;
 		overflow: auto;
 	}
 
@@ -15,27 +19,25 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 70%;
-		background-color: blue;
+		width: 80%;
 		overflow: hidden;
 		position: relative;
-		top: -10px;
 	}
 	
 	#HeaderImage {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		margin-right: auto;
 		max-width: 100%;
-		height: auto;
+		height: 300px;
 		position: relative;
 	}
 	
 	.topnav {
-		max-width: 70%;
-		margin-left: auto;
-		margin-right: auto;
-		height: 10%;
+		background-color: black;
+		max-width: 90%;
+		margin-right: auto%;
 		overflow: hidden;
 	}
 	
@@ -43,9 +45,9 @@
 		float: left;
 		color: #f2f2f2;
 		text-align: center;
-		padding: 14px 85px;
+		padding: 0px 85px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 20px;
 	}
 	
 	.topnav a:hover {
@@ -61,27 +63,56 @@
 	.navbutton {
 		background-color: black;
 		position: relative;
-		width: 103px;
-		left: 0px;
+		left: 100px;
+		height: 60px;
+	}
+	
+	.HomeButton {
+		background-color: black;
+		position: relative;
+		left: 100px;
+		height: 60px;
+	}
+	
+	
+	#about_container {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		position: relative;
+		top: 70px;
+	}
+	
+	h1 {
+		font-size: 30pt;
+	}
+	
+	p {
+		font-size: 20pt;
 	}
 
 </style>
 
 <body>
-
+	
+	<div class='topnav'>
+		<a class='HomeButton'><div style="margin-top: 15px;" style="font-size: 15px;">Home</div></a>
+		<a class='navbutton' style="white-space: nowrap;"><div style="margin-top: 15px;">JavaScript</div></a>
+		<a class='navbutton'><div style="margin-top: 15px;">C++</div></a>
+		<a class='navbutton'><div style="margin-top: 15px;">C#</div></a>
+		<a class='navbutton'><div style="margin-top: 15px;">Python</div></a>
+	</div>
+	
 	<div class='CenterElement'>
 		<img id='HeaderImage' src='Web_Title.png'>
 	</div>
 	
-	<div class='topnav'>
-		<a class='navbutton'>Home</a>
-		<a class='navbutton'>Software</a>
-		<a class='navbutton'>Mechanical</a>
-		<a class='navbutton'>Electrical</a>
-		<a class='navbutton'>Mathematics</a>
+	<div id='about_container'>
+		<h1>Jerome Richards</h1>
+		<p>I have recently gaduated with a Bachelor of Science in Physics and a Minor in Computer Science. Much of my experience
+		   in Software Development has been in school related projects. Click the tabs to view some of my works.</p>
 	</div>
-	
-	<div></div>
 	
 </body>
 
